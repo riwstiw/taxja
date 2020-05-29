@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6549D3F3-609E-470C-9A99-1A59C105F52D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\lover\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group1.Designer.cs">
+      <DependentUpon>group1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group4.Designer.cs">
+      <DependentUpon>group4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group3.Designer.cs">
+      <DependentUpon>group3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group5.Designer.cs">
+      <DependentUpon>group5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySqlCommand.cs" />
+    <Compile Include="MySqlConnection.cs" />
+    <Compile Include="MySqlDataReader.cs" />
+    <Compile Include="popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popup.Designer.cs">
+      <DependentUpon>popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="group2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group2.Designer.cs">
+      <DependentUpon>group2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group1.resx">
+      <DependentUpon>group1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group4.resx">
+      <DependentUpon>group4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group3.resx">
+      <DependentUpon>group3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group5.resx">
+      <DependentUpon>group5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group2.resx">
+      <DependentUpon>group2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popup.resx">
+      <DependentUpon>popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Bag_PNG_Clipart_Picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ae2926a09d38c18306092f6b446da7ef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-family-cartoon-royalty-free-illustration-lovely-family-5a9ba0f5ce6eb0.1406489015201487258456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Date02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-dark-big-house-illustration-image_1428271.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-house-the-home-depot-property-apartment-home-cartoon-png-5b35d2a7cd4b75.1462828915302539918409.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-house-cartoon-clip-art-5b3a9b8b3dd299.0509912715305675632532.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28541.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-512.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
